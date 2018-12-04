@@ -12,7 +12,6 @@ it = util.Iterator(board)
 it.start()
 
 Tvl = board.get_pin('a:0:1')
-#board.analog[0].read()
 
 time.sleep(1.0)
 print(int(Tvl.read()*5000.0-500.0)/10.0)
